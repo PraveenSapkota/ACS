@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .congratulations-container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: bounceIn 1s ease-out;
+        }
+
+        .congratulations-container h1 {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .congratulations-container p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s 0.5s forwards;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Animations */
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0);
+            }
+            60% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="congratulations-container">
+        <h1>Congratulations!</h1>
+        <p>You have successfully registered. Welcome to our community!</p>
+        <a href="index.php">
+            <button class="btn">Register new Account</button>
+        </a>
+    </div>
+
+    <!-- JavaScript (Optional for adding more effects) -->
+    <script>
+        // Optional: You can add more animations or effects in JS if needed.
+    </script>
+</body>
+</html>
